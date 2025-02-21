@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('welcome');
+});
 
 // Route::get('/cth', function () {
 //     return view('contoh');
@@ -34,3 +34,11 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/hello/hello2/hellolagi', function () {
 //     echo "Hello World";
 // });
+
+Route::get('/mahasiswa', function () {
+    $kelas = "IS62";
+    $data = ["Putri Chantika","Raihan Ramadhani","Nabiilah Aula Safda","Cut Putri Efrina","Sri Maharani","Penti Anggraini","Kania Nabila Muntaz"];
+
+    // return view('mahasiswa.index')->with('mhs',$data)->with('kls',$kelas);
+    return view('mahasiswa.index',compact('kelas','data'));
+});
