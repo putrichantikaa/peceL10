@@ -13,6 +13,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Route::get('/cth', function () {
+//     return view('contoh');
+// });
+
+// Route::fallback(function () {
+//     return view('notfound');
+// });
+
+
+
+// Route::get('mahasiswa/{nama}', function ($nama) {
+//     echo "Ini Halaman Mahasiswa dengan Nama $nama";
+// });
+
+// Route::get('/hello/hello2/hellolagi', function () {
+//     echo "Hello World";
+// });
