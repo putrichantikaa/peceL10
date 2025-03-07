@@ -35,10 +35,21 @@ Route::get('/', function () {
 //     echo "Hello World";
 // });
 
-Route::get('/mahasiswa', function () {
-    $kelas = "IS62";
-    $data = ["Putri Chantika","Raihan Ramadhani","Nabiilah Aula Safda","Cut Putri Efrina","Sri Maharani","Penti Anggraini","Kania Nabila Muntaz"];
+// Route::get('/mahasiswa', function () {
+//     $kelas = "IS62";
+//     $data = ["Putri Chantika","Raihan Ramadhani","Nabiilah Aula Safda","Cut Putri Efrina","Sri Maharani","Penti Anggraini","Kania Nabila Muntaz"];
 
-    // return view('mahasiswa.index')->with('mhs',$data)->with('kls',$kelas);
-    return view('mahasiswa.index',compact('kelas','data'));
+//     // return view('mahasiswa.index')->with('mhs',$data)->with('kls',$kelas);
+//     return view('mahasiswa.index',compact('kelas','data'));
+// });
+
+Route::get('/mahasiswa', function () {
+    $nama = "Putri Chantika";
+    $nilai = 90;
+
+    $nilai2 = [40,70,36,99,100];
+
+    return view('mahasiswa',compact('nama','nilai','nilai2'));
 });
+
+
