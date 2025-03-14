@@ -56,6 +56,7 @@
         @for ($i=1; $i<=50;$i++)
             <div class="alert alert-info d-inline-block">{{$i}}</div>
         @endfor
+    </div>
 
 
     <script src="{{ asset('js/bootstrap.bundle.js')}}"></script>
